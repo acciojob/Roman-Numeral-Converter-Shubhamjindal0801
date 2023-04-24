@@ -1,13 +1,14 @@
 function convertToRoman(num) {
-  	const obj = {
-      0:['M',1000], 
-      1:['D', 500], 
-      2:['C', 100], 
-      3:['L', 50], 
-      4:['X', 10], 
-      5:['V', 5], 
-      6:['I', 1]
-    };
+  	
+	const obj = [
+    { value: 1000, symbol: 'M' },
+    { value: 500, symbol: 'D' },
+    { value: 100, symbol: 'C' },
+    { value: 50, symbol: 'L' },
+    { value: 10, symbol: 'X' },
+    { value: 5, symbol: 'V' },
+    { value: 1, symbol: 'I' }
+  ];
 
   //your code here
 	let romanNumeral = '';
