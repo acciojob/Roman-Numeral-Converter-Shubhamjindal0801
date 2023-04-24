@@ -11,10 +11,10 @@ function convertToRoman(num) {
 
   //your code here
 	let romanNumeral = '';
-  for (let i = 0; i < romanNumerals.length; i++) {
-    while (num >= romanNumerals[i].value) {
-      romanNumeral += romanNumerals[i].symbol;
-      num -= romanNumerals[i].value;
+  for (let i = 0; i < obj.length; i++) {
+    while (num >= obj[i].value) {
+      romanNumeral += obj[i].symbol;
+      num -= obj[i].value;
     }
   }
   return romanNumeral;
@@ -23,7 +23,7 @@ function convertToRoman(num) {
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(convertToRoman(36));
-console.log(convertToRoman(14))
+//console.log(convertToRoman(14))
 
 
 
